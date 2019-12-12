@@ -70,3 +70,10 @@ cc_library(
     includes = ["."],
     linkopts = ["-lQt5OpenGL"],
 )
+
+cc_library(
+    name = "qt_printsupport",
+    hdrs = glob(["QtPrintSupport/**"]),
+    includes = ["."],
+    linkopts = ["-lQt5PrintSupport"],
+)
